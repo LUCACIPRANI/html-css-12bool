@@ -5,6 +5,57 @@
 }
 
 /* Esercizio per casa */
+.container {
+    width: 1570px;
+    max-width: 100%;  /* puo essere tralasciato  */
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    margin-bottom: 1em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    width: 100%;
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: #0E6CFA;
+    border: 1px solid white;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+} 
+
+.col-xs-6 {
+    display: flex;
+    align-items: center;
+}
+
+.green{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+[class*="nested"] {
+    width: 100%;
+    flex: 0 0 auto;
+    height: 35px;
+    background-color: #1CE165;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.7em;
+} 
+
+.col-nested-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+.col-nested-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+.col-nested-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
 
 
 /* Offset */
