@@ -6,10 +6,9 @@
 
 /* Esercizio per casa */
 .container {
-    width: 1570px;
+    width: 992px;
     max-width: 100%;  /* puo essere tralasciato  */
     margin: 0 auto;
-    /* border: 2px solid black; */
     margin-bottom: 1em;
 }
 
@@ -22,13 +21,13 @@
 [class*="col-"] {
     width: 100%;
     flex: 0 0 auto;
-    height: 50px;
+    height: 30px;
     background-color: #0E6CFA;
     border: 1px solid white;
-    padding: 1em;
+    padding: 0.9em;
     color: white;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.7em;
 } 
 
 .col-xs-6 {
@@ -37,34 +36,56 @@
 }
 
 .green{
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 [class*="nested"] {
     width: 100%;
     flex: 0 0 auto;
-    height: 35px;
+    height: 20px;
     background-color: #1CE165;
     border: 1px solid white;
     color: white;
     text-align: center;
     font-size: 0.9em;
-    padding: 0.7em;
+    padding: 0.4em;
 } 
 
 .col-nested-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
 .col-nested-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
 .col-nested-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
 
-
 /* Offset */
-
-
 /* Nested */
 
+.col-xs-7,
+.col-xs-5{
+    display: flex;
+    align-items: center;
+}
+
+.col-nested-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+
+.bord {
+    border: 1px solid #0E6CFA;
+}
 
 /* Alignment */
+
+#double{
+    height: 60px;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+}
+
+.bottom{
+    display: flex;
+    align-items: flex-end;
+}
 
 
 /* Justify content  */
@@ -74,3 +95,7 @@
 
 
 /* Space-between */
+
+.prova{
+    width: 100%;
+}
