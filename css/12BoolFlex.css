@@ -1,0 +1,73 @@
+/* ELEMENTI DI RESPONIVITA' */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1070px;
+    max-width: 100%;  /* puo essere tralasciato  */
+    margin: 0 auto;
+}
+/* definito con max-width e width di 1070px ha una larghezza massima di 1070px  */
+
+.container-fluid {
+    width: 100%;
+    max-width: 100%;
+}
+/* si adatta al 100% dello schermo  */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    flex: 0 0 auto;
+}
+
+/* [class*="col-offset-"] {
+} */
+
+/* 12 System  */
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+/* col lo utilizziamo per layout dinamico  */
+
+/* come per il container fluid, ma per le colonne, 
+si adatta ai contenuti, specie per le immagini */
+/* --------------------- */
+
+.col-xs-1 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-2 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-3 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-4 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-5 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-6 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-7 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-8 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-9 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-10 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-11 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-12 {flex-basis: calc((100% / 12) * 1); }
+.col-xs-offset-1 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-2 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-3 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-4 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-5 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-6 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-7 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-8 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-9 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-10 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-11 {margin-left: calc((100% / 12) * 1); }
+.col-xs-offset-12 {margin-left: calc((100% / 12) * 1); }
+
+/* col-1 lo utilizziamo per layout fisso  */
+/* --------------------- */
